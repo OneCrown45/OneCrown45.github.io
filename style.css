@@ -38,10 +38,18 @@ nav a {
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 100px 10%;
-    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+   text-align: center;
+    padding: 150px 10%;
+    /* This adds the parallax effect */
+    background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+    /* This adds a dark overlay so your name is easy to read */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
