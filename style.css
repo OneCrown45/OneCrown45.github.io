@@ -74,12 +74,15 @@ nav a {
 }
 
 /* Sections */
+/* Ensure all sections span full width */
 .section {
     padding: 80px 10%;
+    width: 100%;
 }
 
 .gray {
     background: #f4f4f4;
+    width: 100%; /* Ensures the gray background spans the whole screen */
 }
 
 h2 {
@@ -115,27 +118,31 @@ h2 {
     text-decoration: none;
 }
 
-/* Skills */
+/* Skills Section Fix */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: flex-start;
 }
 
-.skill-category h4 {
-    margin-bottom: 10px;
-    color: #555;
+.skill-category {
+    flex: 1;
+    min-width: 250px;
 }
 
-/* Footer */
+/* Footer Fix - Full Width Black Bar */
 footer {
     text-align: center;
-    padding: 50px;
+    padding: 60px 10%;
     background: #1a1a1a;
     color: white;
+    width: 100%;
+    margin-top: 0;
 }
 
 footer a {
     color: #007bff;
     margin: 0 10px;
+    text-decoration: none;
 }
